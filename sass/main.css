@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.0em;
+  color: whitesmoke;
+  background-color: brown;
+  font-family: 'Rubik', sans-serif;
+}
+
+.mb-0 {
+  color: brown;
+}
+
+.mb-3 {
+  color: royalblue;
+}
+
+.mb-4 {
+  color: royalblue;
+}
+
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  -ms-grid-rows: 90px 200px 100px;
+      grid-template-rows: 90px 200px 100px;
+  -ms-grid-columns: 100px 50px;
+      grid-template-columns: 100px 50px;
+  grid-auto-flow: row;
+}
+
+.contenedor .header {
+  grid-area: header;
+}
+
+.contenedor .main {
+  grid-area: main;
+}
+
+.contenedor .footer {
+  grid-area: footer;
+}
+
+.footer {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 100px;
+}
+
+@media (min-width: 992px) {
+  .product-item .product-item-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -3rem;
+  }
+  .product-item .product-item-img {
+    position: relative;
+    z-index: 0;
+    max-width: 60vw;
+  }
+  .product-item .product-item-description {
+    position: relative;
+    z-index: 1;
+    margin-top: -3rem;
+    max-width: 50vw;
+  }
+}
+
+.bg-faded {
+  background-color: blanchedalmond;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.contenedortintos {
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  -ms-grid-rows: 90px 300px 60px;
+      grid-template-rows: 90px 300px 60px;
+  -ms-grid-columns: 50px 50px 50px 50px;
+      grid-template-columns: 50px 50px 50px 50px;
+  grid-row: auto;
+}
+
+.galeria-vinos {
+  border: 1px solid #ccc;
+  display: block;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.producto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+/*# sourceMappingURL=main.css.map */

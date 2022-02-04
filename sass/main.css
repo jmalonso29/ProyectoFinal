@@ -4,7 +4,7 @@ body {
   line-height: 1.0em;
   color: whitesmoke;
   background-color: brown;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .mb-0 {
@@ -17,36 +17,6 @@ body {
 
 .mb-4 {
   color: royalblue;
-}
-
-.contenedor {
-  display: -ms-grid;
-  display: grid;
-  height: auto;
-  -ms-grid-rows: 90px 200px 100px;
-      grid-template-rows: 90px 200px 100px;
-  -ms-grid-columns: 100px 50px;
-      grid-template-columns: 100px 50px;
-  grid-auto-flow: row;
-}
-
-.contenedor .header {
-  grid-area: header;
-}
-
-.contenedor .main {
-  grid-area: main;
-}
-
-.contenedor .footer {
-  grid-area: footer;
-}
-
-.footer {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: 100px;
 }
 
 @media (min-width: 992px) {
@@ -92,22 +62,6 @@ body {
   font-weight: 100;
 }
 
-.contenedortintos {
-  display: -ms-grid;
-  display: grid;
-  height: auto;
-  -ms-grid-rows: 90px 300px 60px;
-      grid-template-rows: 90px 300px 60px;
-  -ms-grid-columns: 50px 50px 50px 50px;
-      grid-template-columns: 50px 50px 50px 50px;
-  grid-row: auto;
-}
-
-.galeria-vinos {
-  border: 1px solid #ccc;
-  display: block;
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,18 +71,61 @@ body {
       flex-wrap: wrap;
 }
 
-.display-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
 }
 
-.producto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
+hr:not([size]) {
+  height: 1px;
+}
+
+h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 2rem;
+  }
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */

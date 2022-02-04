@@ -9,7 +9,8 @@ body {
   font-family: $fuente-principal;
   }
 .mb-0 { 
-  color: $color-principal
+  color: $color-principal;
+  line-height: 3rem;
 }
 .mb-3 {
   color: $color-fuente;
